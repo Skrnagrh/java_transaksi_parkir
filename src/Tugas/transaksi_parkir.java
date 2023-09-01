@@ -24,7 +24,7 @@ import javax.swing.table.JTableHeader;
  *
  * @author Personal
  */
-public class Latihan5 extends javax.swing.JFrame {
+public class transaksi_parkir extends javax.swing.JFrame {
 
     int byr, tbyr, kembali;
     String Number="";
@@ -52,7 +52,7 @@ public class Latihan5 extends javax.swing.JFrame {
         dtm.addRow(Data);
         }
     }catch (SQLException ex){
-        Logger.getLogger(Latihan5.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(transaksi_parkir.class.getName()).log(Level.SEVERE, null, ex);
     }
     //source tabel
     tabeldata.setModel(dtm);
@@ -64,12 +64,12 @@ public class Latihan5 extends javax.swing.JFrame {
     private long harga;
     private Timer waktu;
     int a, b, c;
-    public Latihan5() {
+    public transaksi_parkir() {
         initComponents();
         try {
             selectData();
         } catch (SQLException ex) {
-            Logger.getLogger(Latihan5.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(transaksi_parkir.class.getName()).log(Level.SEVERE, null, ex);
         }
         //Untuk Menjalankan Progress dan Menghasilkan Hasil
         ActionListener listenerProgress = new ActionListener(){
@@ -139,7 +139,6 @@ public class Latihan5 extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 690));
         setResizable(false);
         getContentPane().setLayout(new java.awt.GridLayout(1, 0));
 
@@ -367,7 +366,7 @@ public class Latihan5 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Data Gagal Di Tambahkan", "Gagal", JOptionPane.INFORMATION_MESSAGE);
             }
         } catch (SQLException ex) {
-            Logger.getLogger(Latihan5.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(transaksi_parkir.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -395,12 +394,12 @@ public class Latihan5 extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(this, "Data Gagal Di Hapus", "Gagal", JOptionPane.WARNING_MESSAGE);
                     }
                 } catch (SQLException ex) {
-                    Logger.getLogger(Latihan5.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(transaksi_parkir.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }try {
                selectData(); 
         } catch (SQLException ex) {
-            Logger.getLogger(Latihan5.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(transaksi_parkir.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -466,20 +465,21 @@ public class Latihan5 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Latihan5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(transaksi_parkir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Latihan5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(transaksi_parkir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Latihan5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(transaksi_parkir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Latihan5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(transaksi_parkir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Latihan5().setVisible(true);
+                new transaksi_parkir().setVisible(true);
             }
         });
     }
