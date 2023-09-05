@@ -1,5 +1,3 @@
-Tentu, berikut adalah README yang diperbarui untuk proyek "Java Transaksi Parkir":
-
 # Java Transaksi Parkir
 
 Selamat datang di repositori Java Transaksi Parkir! Repositori ini berisi implementasi sederhana tentang sistem transaksi di sebuah tempat parkir menggunakan bahasa pemrograman Java. Dalam proyek ini, Anda akan menemukan kode untuk mengelola transaksi parkir di tempat parkir.
